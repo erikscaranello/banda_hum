@@ -1,0 +1,2 @@
+module MusicosHelper
+end

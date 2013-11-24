@@ -1,0 +1,30 @@
+<%= stylesheet_link_tag "styles" %>
+<%= stylesheet_link_tag "icarousel" %>
+<%= stylesheet_link_tag "demo3" %>
+
+<%= javascript_include_tag "icarousel.packed" %>
+<%= javascript_include_tag "quem_somos_site" %>
+
+<div class="right-side">
+        <div class="texto-mensagem">
+                <p><%= @quemSomos.mensagem %></p>
+        </div>
+	
+	 <% if @fotos == "sem_fotos" %>
+
+                <div class="div-redonda erro" style="padding:20px; text-align:center; margin-top:2%">
+                        <p>Nos desculpe, nosso site ainda não tem fotos</p>
+                </div>
+
+        <% else %>
+
+                <div class="fotos" id="icarousel">
+
+                <% for foto in @fotos %>
+                        <img src="/assets/fotos/<%= foto.link %>" />
+                <% end %>
+
+                </div>
+
+        <% end %>
+</div>

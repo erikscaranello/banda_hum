@@ -1,0 +1,25 @@
+<h:outputScript name="musicos_site.js" library="js" />
+<h:outputStylesheet library="css" name="musicos_site.css" />
+	<div class="right-side">
+		<c:choose>
+			<c:when test="#{mensagemDeErro != null}">
+							<p>mensagem de erro</p>
+							<p>#{mensagemDeErro}</p>
+						</c:when>
+						<c:otherwise>
+								<ui:repeat value="#{infosInstrumentos}" var="infosInstrumento">
+								<div class="ui-round-all ui-state-default foto_instrumento">
+									<div class="nome">
+										<p class="titulo texto-centralizado margin-top">#{infosInstrumento.instrumento}</p>
+									</div>
+									<div class="link_foto">
+										<h:graphicImage library="images" name="instrumento/#{infosInstrumento.foto}" styleClass="clicavel" onclick="javascript:verificarMusicosComInstrumento(#{infosInstrumento.id});" />
+									</div>
+								</div>
+							</ui:repeat> 	
+						</c:otherwise>
+					</c:choose>
+    				
+    				
+    				<div class="clear"></div>
+    			</div>

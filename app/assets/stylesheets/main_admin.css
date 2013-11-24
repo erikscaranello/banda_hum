@@ -1,0 +1,207 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic&subset=cyrillic,greek,latin');
+
+@CHARSET "ISO-8859-1";
+
+* {
+        margin:0;
+        padding:0;
+}
+
+body{
+	background:#000;
+	font-family: 'Ubuntu', Tahoma;
+	font-size:13px;
+}
+.fundo{
+        margin: 1% auto;
+        width:90%;
+        background:#FFF;
+	border:1px solid #0055FF;
+}
+.logo {
+	margin:1%;
+	width:350px;
+}
+
+.playlist{
+	margin:1%;
+	width:200px;
+}
+.lado-esquerdo {
+	float:left;
+}
+.lado-direito {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+
+.cem-por-cento {
+	width:100%;
+}
+.sessenta-cinco-por-cento {
+	margin:2.5%;
+	width:60%;
+}
+.cinquenta-por-cento {
+	margin:2.5%;
+        width:45%;
+}
+.trinta-cinco-por-cento {
+	margin:2.5%;
+        width:30%;
+}
+.calendario {
+	margin:2.5%;
+	width:30%;
+	cursor:pointer;
+}
+.contato, .musicos, .quem_ja_viu{
+	cursor:pointer;
+}
+ 
+.radius-dez-por-cento {
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+	
+}
+
+.radius-dez-por-cento-top {
+        border-radius: 10px 10px 0px 0px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 0px;
+        -moz-border-radius-bottomleft: 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+
+}
+
+.radius-sete-por-cento-top {
+        border-radius: 7px 7px 0px 0px;
+        -moz-border-radius-topleft: 7px;
+        -moz-border-radius-topright: 7px;
+        -moz-border-radius-bottomright: 0px;
+        -moz-border-radius-bottomleft: 0px;
+        -webkit-border-radius: 7px 7px 0px 0px;
+
+}
+
+.border-um-px-azul{
+	border:1px solid #000066;
+}
+
+.padding-zero {
+	padding:0;
+}
+.padding-um-por-cento {
+	padding:1%;
+}
+
+.linha-branca {
+	border-bottom: 1px solid #FFF;
+}
+.linha-vermelha {
+	border-bottom: 1px solid #FF0000
+}
+.linha-azul-clara {
+	border-bottom: 1px solid #4DA6FF;
+}
+.linha-azul {
+	border-bottom: 1px solid #0055FF
+}
+
+.texto-centralizado {
+	text-align:center;
+}
+.texto-esquerda {
+	text-align:left;
+}
+.titulo {
+	font-size:16px;
+	color:#000055;
+}
+.margin-zero {
+	margin:0;
+}
+.margin-top {
+	margin-top:2%;
+}
+
+.fundo-verde-claro {
+	background:#00FF00;
+}
+.fundo-azul-escuro {
+	background:#000044;
+}
+.fundo-azul-claro {
+	background:#4DA6FF;
+}
+.fundo-cinza {
+	background:#222;
+}
+
+
+.fonte-branco {
+	color:#FFF;
+}
+.fonte-vermelho {
+	color:#FF0000;
+}
+.fonte-vermelho-escuro {
+	color:#770000;
+}
+.possivel-escrever {
+	cursor:pointer;
+}
+.fonte-verde-claro {
+	color:#00FF00;
+}
+.fonte-azul-claro {
+	color:#4DA6FF;
+}
+.fonte-azul {
+	color:#0055FF;
+}
+.fonte-azul-escuro {
+	color:#000055;
+}
+
+
+
+.seta-esquerda{
+        position:absolute;
+        width:30px;
+        height:30px;
+        background-image: url("/assets/seta-esquerda.fw.png");
+        top:30%;
+        left:10%;
+}
+.seta-direita{
+        position:absolute;
+        width:30px;
+        height:30px;
+        background-image: url("/assets/seta-direita.fw.png");
+        top:30%;
+        right:10%;
+}
+
+#fechar-janela {
+	background:url("/assets/bt_fechar.fw.png") no-repeat;
+	width:75px;
+	height:30px;
+	cursor: pointer;
+}
+
+.bottom-2-por-cento {
+	position:absolute;
+	bottom:2%;
+}
+.right-2-por-cento {
+	position:absolute;
+	right:2%;
+}

@@ -1,0 +1,89 @@
+@CHARSET "ISO-8859-1";
+
+.escondido{
+	display:none;
+}
+
+
+.foto, .infos{
+	margin: 2%;
+}
+
+
+.foto{
+	cursor: pointer;
+}
+.foto_instrumento, .infos-de-musicos{
+	float:left;	
+}
+
+
+.ui-state-default{
+	margin: 0 2% 5% 2% !important;
+}
+
+.infos-geral{
+	background:url("/assets/fundo-musico.fw.png");
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	z-index: 1;
+}
+
+.right-side{
+	text-align: center;
+}
+
+.foto_instrumento{
+	margin: 1%;
+	padding: 0 1% 1% 1%;
+	background:url("/assets/fundo_preenchimento.fw.png");
+	border: 1px solid #000066;
+	border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;   	
+	border-radius: 10px;
+}
+
+.link_foto {
+	cursor:pointer;
+}
+
+.foto{
+	float:left;
+	width: 250px;	
+}
+.infos{
+	float:left;
+	width: 350px;
+}
+
+.infos-de-musicos{
+	width: 700px;
+}
+
+
+.descricao, .estilos-musicais, .email{
+	margin:10px 0 0 0;
+}
+.email{
+	margin:10px 0;
+}
+
+
+
+.email a:link{
+	color:#3FADD6;
+	text-decoration: none;
+}
+.email a:hover{
+	color:#C7E6F1;
+	text-decoration: none;
+}
+
+.email a:visited{
+	color:#CCC;
+	text-decoration: none;
+}

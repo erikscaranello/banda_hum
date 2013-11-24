@@ -1,0 +1,41 @@
+<%= stylesheet_link_tag "uploadifive" %>
+
+<%= javascript_include_tag "musicos_admin" %>
+<%= javascript_include_tag "jquery.uploadifive.min" %>
+
+<div class="musicos-pag fundo-azul-escuro">
+        <p class="fonte-branco padding-um-por-cento">Inserção de novo músico</p>
+</div>
+<div class="corpo margin-top">
+
+        <div class="cinquenta-por-cento texto-centralizado" style="margin: 2.5% auto">
+		
+		<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 2.5% auto; margin-bottom:0;"><%= label_tag(:nome, "Nome:") %></p>
+                <p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 0 auto;"><%= text_field_tag(:nome) %></p>
+
+		<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 2.5% auto; margin-bottom:0;"><%= label_tag(:descricao, "Descrição:") %></p>
+                <p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 0 auto"><%= text_area_tag(:descricao, "", size:"43x6") %></p>
+					
+		<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 2.5% auto; margin-bottom:0;"><%= label_tag(:estilos_musicais, "Estilos musicais:") %></p>
+                <p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 0 auto"><%= text_area_tag(:estilos_musicais, "", size:"43x6") %></p>
+			
+		<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 2.5% auto; margin-bottom:0;"><%= label_tag(:twitter, "Twitter:") %></p>
+              	<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 0 auto"><%= text_field_tag(:twitter) %></p>
+
+		<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 2.5% auto; margin-bottom:0;"><%= label_tag(:facebook, "Facebook:") %></p>
+               	<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 0 auto"><%= text_field_tag(:facebook) %></p> 
+		
+		<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 2.5% auto; margin-bottom:0;"><%= label_tag(:email, "E-mail:") %></p>
+               	<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 0 auto"><%= text_field_tag(:email) %></p> 			
+		
+		<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 2.5% auto; margin-bottom:0;"><%= label(:foto, "Foto:") %></p>
+
+		<p class="texto-esquerda sessenta-cinco-por-cento" style="margin: 2.5% auto; margin-bottom:0;"> 
+			<input id="fileupload" name="link" type="file" multiple="true">
+		</p>		
+        </div>
+
+  </div>
+
+</div>
+

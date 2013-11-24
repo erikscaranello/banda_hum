@@ -1,0 +1,82 @@
+@CHARSET "ISO-8859-1";
+
+.fotos{
+	margin-top:2%; 
+}
+
+.fotos-grande{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	width: 0;
+	height: 0;
+	background:#555;
+	text-align: center;
+}
+
+.lado-direito{
+	position: relative;
+	top: 13%;
+	left:20%;
+}
+.procura{
+	float:right;
+	margin: 2%;
+}
+
+.albuns{
+	position: absolute;
+	left: -17%;
+	top:270px;
+	width: 163px;
+	font-size:14px;
+}
+
+.album-link{
+	font-weight:normal;
+}
+
+.album-hover{
+	font-weight:normal;
+	color:#000;
+}
+
+.album-escolhido{
+	font-weight:normal;
+	color: #000055;
+}
+
+.foto{
+	margin: 1%;
+	float:left;
+}
+
+.fechar{
+	z-index: 2;
+	top: 2% !important;
+	left: 93% !important;
+	right: 2% !important;
+}
+
+.fotos-grandes-caroussel{
+	display: none;
+	margin:0 auto;
+	border: 2px solid #FFF;
+}
+
+.seta-esquerda{
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-image: url("/assets/seta-esquerda.fw.png");
+	top:36%;
+	left:2%;
+}
+.seta-direita{
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-image: url("/assets/seta-direita.fw.png");
+	top:36%;
+	right:2%;
+}

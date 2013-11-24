@@ -1,0 +1,75 @@
+<%= stylesheet_link_tag "quem_nos_ouviu_site" %>
+
+<%= javascript_include_tag "quem_nos_ouviu_site" %>
+
+
+<div class="right-side">
+	<div class="div-redonda blog">
+
+    		<% for mensagem in @mensagens %>
+
+		<div class="mensagem-principal linha-embaixo">
+			<div class="conteudo">
+				<p class="infos-pessoa margin-5px">
+			    		<span class="nome titulo"><%= mensagem.nome %></span> 
+					 <span class="data-envio titulo margin-10px-esquerda"><%= mensagem.data_envio.strftime("%d/%m/%Y") %></span>
+				</p>
+			    	<p class="mensagem texto margin-5px">
+			    		<%= mensagem.mensagem %>
+			    	</p>
+			    	<div class="comentarios-mensagem texto tipografia-azul aparecer margin-5px clicavel" id="comentario-mensagem_<%= mensagem.id %>">
+					<p>Clique aqui para ver o coment&aacute;rios</p>
+				</div>
+			</div>
+		</div>
+
+		<% end %>
+    			
+    		<div class="mensagem-principal escrever-comentario">
+    			<div class="mask clear">
+    				<div class="esquerda-mask">
+    					<p>&nbsp;</p>
+    				</div>
+    				<div class="direita-mask">
+    					<p class="bold margin-bottom-2-por-cento">Escreva aqui seu comentário</p>
+    				</div>
+    			</div>
+    					
+    			<div class="mask clear">
+    				<div class="esquerda-mask">
+    					<p>Nome:</p>
+    				</div>
+    				<div class="direita-mask">
+    					<p class="nome"><input class="tipografia texto" type="text" name="nome_0" size="37" /></p>
+    				</div>
+    			</div>
+    					
+    			<div class="mask clear">
+    				<div class="esquerda-mask">
+    					<p>E-mail:</p>
+    				</div>
+    				<div class="direita-mask">
+    					<p class="email"><input class="tipografia texto" type="text" name="email_0" size="37" /></p>
+    				</div>
+    			</div>
+    					
+    			<div class="mask clear">
+    				<div class="esquerda-mask">
+    					<p>Mensagem:</p>
+    				</div>
+    				<div class="direita-mask">
+    					<p class="mensagem"><textarea class="tipografia texto" name="mensagem_0" rows="6" cols="35"></textarea></p>
+    				</div>
+    			</div>
+    					
+    			<div class="mask clear">
+    				<div class="esquerda-mask">
+    					<p>&nbsp;</p>
+    				</div>
+    				<div class="direita-mask">
+    					<p class="enviar"><input type="button" class="tipografia texto" onclick="javascript:pegarValorDoInput(0);" value="Enviar" /></p>
+    				</div>
+    			</div>
+		</div>
+	</div>
+</div>

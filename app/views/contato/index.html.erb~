@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag "contato_site" %>
+<%= javascript_include_tag "contato_site" %>
+
+	<div class="infos-geral"></div>
+
+	<div class="right-side">
+		<div class="ui-round-all ui-state-default formulario-contato">
+	    		<div class="formulario">
+	    			<p class="titulo bold margin-top">Entre em contato conosco inserindo seus dados no formulário abaixo ou pelos telefones:</p>
+	    			<p class="titulo bold margin-top">(11)2796-6620 / (11)7759-7371 / (11)7833-5333</p>
+	    					
+	    			<p class="texto bold margin-top">Nome:</p>
+	    			<p class="texto"><input type="text" name="nome" size="50" /></p>
+	    					
+	    			<p class="texto bold margin-top">E-mail:</p>
+	    			<p class="texto"><input type="text" name="email" size="50" /></p>
+	    					
+	    			<p class="texto bold margin-top">Mensagem:</p>
+	    			<p class="texto"><textarea name="mensagem" rows="7" cols="50" /></p>
+	    					
+	    			<p class="texto margin-top"><input type="button" value="Enviar" /></p>
+	    		</div>
+	    	</div>
+    	</div>
+
+
+

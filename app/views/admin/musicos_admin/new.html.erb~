@@ -1,0 +1,25 @@
+<%= javascript_include_tag "musicos_admin" %>
+<%= javascript_include_tag "jquery.fileupload" %>	
+<%= javascript_include_tag "jquery.iframe-transport" %>
+<%= javascript_include_tag "json_parse" %>
+<%= javascript_include_tag "upload" %>
+
+
+<div class="musicos-pag fundo-azul-escuro">
+        <p class="fonte-branco padding-um-por-cento">Inserção de novo músico</p>
+</div>
+<div class="corpo margin-top">
+
+	<div class="cinquenta-por-cento texto-centralizado" style="margin: 2.5% auto">		
+		<% form_for(:fotos, :html => {:multipart => true }) do |f| %>
+		
+			<%= f.file_field :foto %>
+		
+		<% end %>
+	
+	</div>	 
+   
+  </div>
+	
+</div>
+

@@ -1,0 +1,46 @@
+<%= stylesheet_link_tag "foto_site" %>
+<%= stylesheet_link_tag "smoothness/jquery-ui-1.10.0.custom.css" %>
+
+<%= javascript_include_tag "fotos_site" %>
+<%= javascript_include_tag "jquery-ui-1.10.0.custom.js" %>
+
+
+<div class="right-side">
+	<div class="div-redonda direito-cima">
+    				
+		<div class="procura button">
+	    		<p>&nbsp;</p>
+	    		<p><input type="button" value="Procurar" class="botao-de-procura tipografia texto" id="botao-procurar" /></p>
+	    	</div>
+	    			
+	    	<div class="procura data titulo">
+	    		<p>Procurar pela data:</p>
+		    	<p><input type="text" id="procura-fotos-data" value="" class="campo-de-procura tipografia texto" /></p>
+	    	</div>		
+	    			
+	    	<div class="procura frase titulo">
+			<p>Procurar pela frase:</p>
+		    	<p><input type="text" id="procura-fotos" value="Digite aqui sua procura" class="campo-de-procura tipografia texto" /></p>
+	    	</div>
+	    			
+	    	<div class="info"></div>
+	    	<div class="clear"></div>
+    	</div>
+    			
+    	<div class="div-redonda albuns">
+		<p class="padding-1-por-cento-total titulo linha-embaixo texto-centralizado margin-top margin-bottom-2-por-cento margin-left-2-por-cento margin-right-2-por-cento">Álbuns</p>
+
+			<% for album in @albuns %>
+		    		<p class="padding-1-por-cento-total texto-centralizado clicavel clique-abrir-thumbs album-link" id="album_<%= album.id %>"><%= album.nome %></p>
+		    	<% end %>
+	</div>
+	    		
+	    		
+	 <div class="div-redonda fotos">
+	 </div>
+</div>
+
+<script type="text/javascript">
+	printarFotos(<%= @idAlbumPrimeiro %>, null, null, "/fotos/fotosPorAlbum");
+</script>
+

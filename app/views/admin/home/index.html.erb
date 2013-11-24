@@ -1,0 +1,123 @@
+<%= stylesheet_link_tag "smoothness/jquery-ui-1.10.0.custom.css" %>
+<%= javascript_include_tag "jquery-ui-1.10.0.custom.js" %>
+
+
+<%= javascript_include_tag "home_admin" %>
+
+<div class="calendario radius-dez-por-cento lado-esquerdo fundo-azul-escuro">
+
+</div>
+
+<div class="lado-direito sessenta-cinco-por-cento">
+	<div class="bloco-acima">
+		<div class="lado-esquerdo sessenta-cinco-por-cento margin-zero">
+			<div class="bloco-acima">
+				<div class="quem_somos radius-dez-por-cento fundo-cinza">
+					<div class="quem_somos fonte-azul-claro texto-centralizado titulo padding-um-por-cento radius-sete-por-cento-top">Index / Quem somos</div>
+					<div class="padding-um-por-cento">
+						<p class="fonte-azul linha-azul">Index</p>
+						<p class="index fonte-branco padding-um-por-cento possivel-escrever"><%= @mensagemIndex.mensagem %></p>
+						
+						<p class="fonte-azul linha-azul">Quem Somos</p>
+						<p class="quem_somos_texto fonte-branco padding-um-por-cento possivel-escrever"><%= @quemSomos.mensagem %></p> 	
+					</div>
+				</div>
+				
+			</div>
+			<div class="bloco-abaixo">
+				<div class="musicos radius-dez-por-cento fundo-azul-claro margin-top">
+					<div class="fonte-branco texto-centralizado titulo padding-um-por-cento radius-sete-por-cento-top">Músicos</div>
+					<div class="padding-um-por-cento">
+					<% for instrumentoFoto in @fotosInstrumentos %>
+						<img class="padding-um-por-cento" style="width:22%" src="/assets/instrumento/<%= instrumentoFoto.foto %>" />	
+					<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="lado-direito trinta-cinco-por-cento margin-zero">
+			<div class="bloco-acima">
+				<div class="contato radius-dez-por-cento fundo-verde-claro">
+					<div class="padding-um-por-cento">
+						<p class="titulo texto-centralizado padding-um-por-cento">Contato</p>
+						<% if @mensagemContato == "sem_mensagens" %>
+						<p class="fonte-azul padding-um-por-cento" >
+                                                	Não existem mensagens
+                                                </p>
+						<% else %>
+							<% for mensagem in @mensagemContato %>
+							<div class="fonte-azul padding-um-por-cento" >
+								<% if mensagem.ok_administrador.blank? %>
+									<p class="fonte-vermelho">Mensagem não enviada por email</p>
+									<p><%= mensagem.mensagem %></p>
+								<% else %>
+									<p class="fonte-azul-escuro">Mensagem enviada por email</p>
+                                                                        <p><%= mensagem.mensagem %></p>
+								<% end %>
+							</div>
+							<% end %>
+						<% end %>
+					</div>
+				</div>
+                        </div>
+                        <div class="bloco-abaixo">
+				<div class="twitter-facebook radius-dez-por-cento fundo-verde-claro margin-top">	
+					 <div class="padding-um-por-cento">
+                                                <p class="titulo texto-centralizado padding-um-por-cento">Twitter e Facebook</p>
+                                                <p class="padding-um-por-cento fonte-azul">
+							infos de twitter e facebook
+						</p>
+                                        </div>	
+				</div>
+                        </div>
+		</div>
+	</div>
+
+
+	<div class="bloco-abaixo cem-por-cento clear">
+		<div class="lado-esquerdo trinta-cinco-por-cento margin-zero">
+			<div class="quem_ja_viu radius-dez-por-cento fundo-cinza margin-top">
+                        	<div class="padding-um-por-cento">
+                                	<p class="titulo texto-centralizado padding-um-por-cento fonte-azul-claro">Quem já viu</p>
+                                        <% if @quemJaViu == "sem_mensagens" %>
+                                        <p class="fonte-azul padding-um-por-cento" >
+                                        Não existem mensagens
+                                        </p>
+                                        <% else %>
+                                        	<% for mensagem in @quemJaViu %>
+                                                <div class="fonte-azul padding-um-por-cento" >
+                                                	<% if mensagem.ok_administrador == false %>
+                                                        <p class="fonte-vermelho">Mensagem não liberada</p>
+                                                        <p class="fonte-branco"><%= mensagem.mensagem %></p>
+                                                        <% else %>
+                                                        <p class="fonte-azul">Mensagem liberada</p>
+                                                        <p class="fonte-branco"><%= mensagem.mensagem %></p>
+                                                        <% end %>
+                                                </div>
+                                               	<% end %>
+                                       	<% end %>
+                        	</div>
+                        </div>
+
+                </div>
+		<div class="lado-direito sessenta-cinco-por-cento margin-zero">
+			<div class="fotos radius-dez-por-cento fundo-azul-escuro margin-top">
+                       		<div class="padding-um-por-cento">
+                                        <p class="titulo texto-centralizado padding-um-por-cento fonte-azul-claro">Fotos</p>
+                                        <% if @fotos == "sem_fotos" %>
+                                        <p class="fonte-azul padding-um-por-cento" >
+                                        	Não existem fotos 
+                                        </p>
+                                        <% else %>
+                                                <% for foto in @fotos %>
+                                               		<img class="padding-um-por-cento" style="width:22%" src="/assets/fotos/thumb/<%= foto.link %>" />
+						<% end %>
+                                        <% end %>
+                                </div>
+                        </div>
+		</div>
+	</div>
+</div>
+

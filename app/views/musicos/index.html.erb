@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag "musicos_site" %>
+<%= javascript_include_tag "musicos_site" %>
+
+
+<div class="infos-geral"></div>
+<div class="right-side">
+	<% for instrumento in @fotosInstrumentos %>
+	<div class="foto_instrumento">
+		<div class="nome">
+			<p class="titulo texto-centralizado margin-top"><%= instrumento.instrumento %></p>
+		</div>
+		<div class="link_foto">
+			<%= image_tag("instrumento/" + instrumento.foto, :onclick => "javascript:verificarMusicosComInstrumento(#{instrumento.id});")  %>
+		</div>
+	</div>
+    	<% end %>			
+    				
+    	<div class="clear"></div>
+</div>

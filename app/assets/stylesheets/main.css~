@@ -1,0 +1,210 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic&subset=cyrillic,greek,latin');
+
+@CHARSET "ISO-8859-1";
+
+* {
+	margin:0;
+	padding:0;
+}
+.fundo{
+	font-family: 'Ubuntu', Tahoma;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#fafafa url("/assets/clave-de-sol.jpg") no-repeat;
+}
+
+.tipografia{
+	font-family: 'Ubuntu', Tahoma;
+}
+
+a img{ 
+	border: none;
+	cursor: pointer;
+}
+
+.bold{
+	font-weight: bold !important;
+}
+
+.texto{
+	font-size: 14px;
+	color:#003399;
+	font-weight: normal;
+}
+
+.titulo{
+	font-size: 16px;
+	font-weight: normal;
+	color:#000099;
+}
+.texto-centralizado{
+	text-align: center;
+}
+.tipografia-vermelha{
+	color: #FF0000;
+}
+.tipografia-branca{
+	color: #FFF;
+}
+.tipografia-cinza{
+	color: #CCC;
+}
+.tipografia-azul{
+	color: #000055;
+}
+
+.logo{
+	position:inherit;
+	left: 2%;
+}
+.menu{
+	background-image:url("/assets/fundo_preenchimento.fw.png");
+	border: 1px solid #000066;
+	width:163px;
+	height:180px;
+	position:inherit;
+	top:15%;
+	left: 0;
+	border-radius: 0px 10px 10px 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 0px 10px 10px 0px; 	
+}
+
+.menu p{
+	padding:6px 6px;
+	font-size:14px;
+}
+.menu p a{
+	color: #003399;
+	text-decoration: none;	
+}
+
+.texto-mensagem {
+	color: #003399;
+   	font-size: 14px;
+    	font-weight: normal;
+	background-image: url("/assets/fundo_preenchimento.fw.png") !important;
+	padding: 2%;
+	border: 1px solid #000066;
+	border-radius: 10px;	
+}
+
+.hover, .clicado{
+	background: url("/assets/menu_hover.fw.png") no-repeat bottom;	
+}
+
+.footer{
+	width: 100%;
+	position: inherit;
+	bottom: 0;
+}
+
+.siga-nos{
+	font-size:12px;
+	color:#333;
+	position: inherit;
+	text-align: center;
+	right: 2%;
+}
+
+.desenvolvido{
+	position: inherit;
+	font-size:10px;
+	color:#555;
+	right: 2%;
+	bottom: 0;
+}
+
+.clicavel{
+	cursor: pointer;
+}
+
+.margin-top{
+	margin-top:3%;
+}
+
+.margin-top-vinte-porcento{
+	margin-top:20%;
+}
+
+.fechar{
+	position: absolute;
+	top: 80%;
+	left: 80%;
+	background: url("/assets/bt_fechar.fw.png");
+	width: 75px;
+	height: 30px;
+}
+
+/* .fundo-formulario, .fundo-formulario-sem-borda{ */
+/* 	position: relative; */
+/* 	left: 25%; */
+/* 	top: 15%; */
+/* 	border: 1px solid #333; */
+/* 	width: 63%; */
+/* } */
+.fundo-formulario-sem-borda{
+	border: 0;
+	width: 70%;
+}
+
+.mensagem-principal, .infos_musicos{
+	padding: 2%;	
+}
+.clear{
+	clear: both;
+}
+
+.ui-state-default{
+	border-color: #333 !important;
+	background-image: url("/assets/fundo_preenchimento.fw.png") !important;
+}
+
+.header{
+	position: inherit;
+	width: 100%;
+	top:2%;
+}
+
+.left-side{
+	position: inherit;
+	top: 15%;
+	left:2%;
+	width: 163px;
+}
+.right-side{
+	position: inherit;
+	top: 15%;
+	left:16%;
+	right:2%;
+	width: 81.5%; 
+}
+.texto-vinte-quatro-pixels{
+	font-size: 24px;
+}
+
+.width-cem-por-cento{
+	width: 100%; 
+}
+
+.padding-2-por-cento-total{
+	padding: 2%; 
+}
+.padding-1-por-cento-total{
+	padding: 1%; 
+}
+.linha-embaixo{
+	border-bottom: 1px #000 solid;
+}
+
+.margin-bottom-2-por-cento{
+	margin-bottom: 2%;
+}
+
+.erro{
+	color: #CC1100;
+}

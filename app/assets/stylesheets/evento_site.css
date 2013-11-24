@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+.procura{
+	margin: 0 0 2% 0;
+	padding: 1% 1% 1% 1%;
+	text-align: right;	
+}
+.procura p{
+	text-align: right;	
+}
+.seta-esquerda{
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-image: url("/assets/seta-esquerda.fw.png");
+	top:36%;
+	left:2%;
+}
+.seta-direita{
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-image: url("/assets/seta-direita.fw.png");
+	top:36%;
+	right:2%;
+}

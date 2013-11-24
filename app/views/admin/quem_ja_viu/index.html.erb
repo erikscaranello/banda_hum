@@ -1,0 +1,51 @@
+<div class="contato-pag fundo-azul-escuro">
+	<p class="fonte-branco padding-um-por-cento">Contato</p>
+	
+</div>
+
+<div class="sessenta-cinco-por-cento lado-esquerdo">
+	<span class="fonte-azul-escuro">Total: </span>
+	<span class="fonte-vermelho"><%= @total %> mensagens</span>
+</div>
+
+<div class="trinta-cinco-por-cento lado-esquerdo">
+	<span>Quantidade de registros por página:</span>
+	<span>
+		<select name="quantidade_registros">
+			<option value="_15">15</option>
+			<option value="_30">30</option>
+			<option value="_50">50</option>
+			<option value="_75">75</option>
+			<option value="_100">100</option>
+		</select>
+	</span>
+</div>
+
+<% for mensagem in @mensagemContato %> 
+	<div class="sessenta-cinco-por-cento margin-top">
+		<p class="fonte-azul"> 
+			<span> Nome: </span>
+			<span class="fonte-azul-escuro"><%= mensagem.nome %> </span>
+		</p>
+		<p class="fonte-azul">  
+                        <span> Email: </span>
+                        <span class="fonte-azul-escuro"><a href="mailto:<%= mensagem.email %>"><%= mensagem.email %></a></span>
+                </p>
+		<p class="fonte-azul">  
+                        <span> Mensagem: </span>
+                        <span class="fonte-azul-escuro"><%= mensagem.mensagem %> </span>
+                </p>
+		<p class="fonte-azul">
+                        <span> Status: </span>
+			<% if mensagem.ok_administrador == true %>
+				<span class="fonte-azul-escuro">Recebido no e-mail</span>
+			<% else %>
+				<span class="fonte-vermelho">Não recebido no e-mail</span>
+			<% end %>  
+			</span>
+                </p>
+	</div>
+<% end %>
+
+
+<div class="texto-centralizado"><%= paginate @mensagemContato %></div>

@@ -1,0 +1,10 @@
+<div class="ui-round-all ui-state-default procura">
+	<p class="titulo">
+		Data: 
+		<input type="text" id="procura-eventos-data" value="" class="campo-de-procura" />
+		<input type="button" value="Procurar" class="botao-de-procura" id="botao-procurar" /> 
+	</p>
+</div>
+
+<div class="ui-round-all ui-state-default eventos">
+</div>

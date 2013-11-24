@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BandaHum / Administrativo</title>
+  <%= stylesheet_link_tag    "main_admin" %>
+  <%= javascript_include_tag "jquery-1.9.0" %>
+  <%= javascript_include_tag "main_admin" %>
+  <%= csrf_meta_tags %>
+        
+</head>
+
+<body>
+        <div class="fundo radius-dez-por-cento">
+        	<div class="header">
+                	<div class="logo lado-esquerdo">
+                        	<a href="/admin/home/"><img src="/assets/logo_banda_hum.fw.png" /></a>
+                	</div>
+
+                	<div class="playlist lado-direito">
+                        	<p>Olá Nome do usuario</p>
+
+				<p>Play-list (implementação posterior)</p>
+                        	<!--<a href="http://www.facebook.com/bandahum" target="_blank"><img src="/assets/facebook.fw.png" /></a>
+                        	<a href="http://www.twitter.com/BandaHum" target="_blank"><img src="/assets/twitter.fw.png" /></a>-->
+                	</div>
+			<div class="clear"></div>
+        	</div>
+
+        	<div class="corpo">
+                	<%= yield %>
+        	</div>
+		<div class="clear"></div>
+        </div>
+</body>
+</html>
+
+

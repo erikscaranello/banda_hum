@@ -1,0 +1,24 @@
+<div class="right-side">
+	<ui:repeat value="#{mensagens}" var="mensagem">
+		<div class="ui-round-all ui-state-default fundo-formulario">			
+			<div class="mensagem-principal">
+				<div class="conteudo">
+			    		<p class="texto">
+				    		#{mensagem.mensagem}
+			    		</p>
+			    	</div>
+		    				
+		    		<div class="bottom-right"></div>
+		    		<div class="bottom"></div>
+		    		<div class="bottom-left"></div>
+		    				
+		    	</div>
+		</div>
+	</ui:repeat>
+	    		
+	<div class="fotos" id="icarousel">
+		<ui:repeat value="#{fotos}" var="foto">
+			<h:graphicImage library="images" name="fotos/#{foto.link}" />
+		</ui:repeat>
+	</div>
+</div>

@@ -1,0 +1,25 @@
+<%= javascript_include_tag "musicos_admin" %>
+
+<div class="musicos-pag fundo-azul-escuro">
+	<p class="fonte-branco padding-um-por-cento">Músicos</p>
+</div>
+<div class="corpo margin-top">
+
+<div class="margin-top possivel-escrever"><p><a href="/admin/musicos/new">Inserir novo músico</a></p></div>
+ 
+<table class="cem-por-cento">
+	<% for musico in @musicos %>
+	<tr>
+		<td> <img src="/assets/fotos/thumb/<%= musico[:fotos][0].link %>" /> </td>	
+		<td><%= musico[:musico].nome %> </td>
+		<td>
+			<% for instrumento in musico[:instrumentos] %> 
+				<%= "#{instrumento.instrumento}, " %>
+			<% end %>	
+		</td>
+		<td> <p class="possivel-escrever" onclick="javascript:editarMusico(<%= musico[:musico].id %>);">Editar</p></td>
+		<td><p class="possivel-escrever" onclick="javascript:excluirMusico(<%= musico[:musico].id %>);">Excluir</p></td>
+	</tr>
+	<% end %>
+</table>
+</div>

@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+.blog{
+	color:#003399 !important;
+	font-weight: normal !important;
+}
+.margin-5px{
+	margin:5px;
+}
+.margin-10px-esquerda{
+	margin-left:10px;
+}
+
+.comentario{
+	margin:2%;
+	padding:1%;
+	background: url("/assets/fundo_preenchimento.fw.png");
+	border: 1px solid #000066;
+}
+
+
+.esquerda-mask{
+	width:29%;
+	float:left;
+	text-align: right;
+	margin-right:5px;
+}
+.direita-mask{
+	margin-left:5px;
+	width:69%;
+	float:left;
+	text-align: left;
+}
+
+.mask{
+	padding:4px 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BandaHum</title>
+  <%= stylesheet_link_tag    "main", :media => "all" %>
+  <%= javascript_include_tag "jquery-1.9.0" %>
+  <%= javascript_include_tag "main_site.js" %>
+  <%= csrf_meta_tags %>
+  	
+</head>
+<body>
+	<div class="fundo">	
+	<div class="header"> 
+		<div class="logo">
+			<a href="index"><img src="/images/logo_banda_hum.fw.png" /></a>
+		</div>
+	
+		<div class="siga-nos">
+			<p>Siga-nos no:</p>
+			<a href="http://www.facebook.com/bandahum" target="_blank"><img src="/images/facebook.fw.png" /></a>
+			<a href="http://www.twitter.com/BandaHum" target="_blank"><img src="/images/twitter.fw.png" /></a>
+		</div>
+	</div>
+	
+	<div class="left-side">	
+		<div class="menu">
+			<p><a href="quem_somos">Quem somos</a></p>
+			<p><a href="musicos">Musicos</a></p>
+			<p><a href="contato">Contato</a></p>
+			<p><a href="eventos">Eventos</a></p>
+			<p><a href="fotos">Fotos</a></p>
+			<p><a href="quem_nos_ouviu">Quem nos ouviu</a></p>
+		</div>
+	</div>
+
+		<%= yield %>
+	<div class="footer">
+		<div class="desenvolvido">
+			<p>Desenvolvido por: Erik Scaranello</p>
+		</div>
+	</div>
+
+	</div>
+</body>
+</html>
